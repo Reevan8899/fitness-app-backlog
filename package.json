@@ -1,0 +1,14 @@
+{
+  "name": "fitness-app-backlog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test --experimental-test-coverage --test-coverage-include=src/*.js --test-coverage-exclude=src/server.js --test-coverage-lines=80 --test-coverage-branches=80 --test-coverage-functions=80",
+    "check": "node --check src/auth.js && node --check src/app.js && node --check src/server.js",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "license": "MIT"
+}

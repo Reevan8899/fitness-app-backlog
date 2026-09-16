@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fitness App — регистрация</title>
+<style>
+body{margin:0;background:#f3f7f5;color:#18382b;font:18px system-ui;display:grid;min-height:100vh;place-items:center}main{background:white;padding:40px;border-radius:20px;max-width:420px;margin:20px;box-shadow:0 12px 50px #1232}h1{margin:0 0 8px}p{color:#4f675b}label{display:block;margin-top:20px}input,button{box-sizing:border-box;width:100%;padding:13px;font:inherit;border:1px solid #a4bbae;border-radius:8px}button{background:#167548;color:white;border:0;margin-top:26px;cursor:pointer}#message{min-height:3em;font-size:16px}
+</style>
+<main><h1>Fitness App</h1><p>Начните свою историю тренировок.</p>
+<form id="registration"><label>Email<input name="email" type="email" required autocomplete="email"></label>
+<label>Пароль<input name="password" type="password" minlength="8" maxlength="128" required autocomplete="new-password"></label>
+<label>Подтвердите пароль<input name="confirmPassword" type="password" required autocomplete="new-password"></label>
+<button>Зарегистрироваться</button></form><p id="message" role="status" aria-live="polite"></p></main>
+<script>
+const form=document.querySelector('form');const message=document.querySelector('#message');
+form.addEventListener('submit',async event=>{event.preventDefault();const button=form.querySelector('button');button.disabled=true;try{const response=await fetch('/api/register',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(form)))});const data=await response.json();message.textContent=response.ok?'Регистрация завершена. Вы вошли как '+data.user.email:data.error;if(response.ok)form.reset();}catch{message.textContent='Не удалось связаться с сервером. Попробуйте ещё раз.';}finally{button.disabled=false;}});
+</script>
+</html>
