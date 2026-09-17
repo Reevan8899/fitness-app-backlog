@@ -1,0 +1,13 @@
+$ node work/audit.mjs smoke
+PASS registration form: HTTP 200
+PASS registration: HTTP 201
+PASS automatic login: HTTP 200
+PASS welcome email: delivered to test outbox
+
+Issue filters:
+is:issue is:open label:"priority: high" -> #18, #16, #9, #5, #4, #2
+is:issue milestone:"Sprint 1: MVP" -> 10 issues
+is:issue label:bug assignee:@me -> #21, #18
+Story Points > 5 -> 0 items
+
+exit code: 0

@@ -1,0 +1,20 @@
+$ node work/audit.mjs labels
+GitHub REST: labels
+Label                   Color     Description
+-------------------------------------------------------------------------------------
+feature                 #1d4ed8   Новая функциональность
+bug                     #dc2626   Ошибка, требующая исправления
+docs                    #8b5cf6   Документация
+refactor                #f59e0b   Рефакторинг без изменения поведения
+test                    #16a34a   Тесты
+priority: high          #b91c1c   Критично, делаем первым
+priority: medium        #f59e0b   Важно, но не срочно
+priority: low           #16a34a   Можно отложить
+good first issue        #06b6d4   Подходит новичкам
+blocked                 #7c3aed   Заблокировано зависимостями
+help wanted             #fbbf24   Нужна помощь сообщества
+triage                  #ededed   Новая задача требует первичного разбора
+
+12 настроенных меток; категории: тип, приоритет, специальные.
+
+exit code: 0

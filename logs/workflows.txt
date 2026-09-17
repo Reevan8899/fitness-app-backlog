@@ -1,0 +1,21 @@
+$ node work/audit.mjs workflows
+GitHub Projects: настройки проверены в интерфейсе
+Auto-add to project          ON
+Item added to project        ON -> Todo
+Item closed                  ON -> Done
+Item reopened                ON -> Todo
+Pull request merged          ON -> Done
+
+GitHub Actions (REST):
+Auto-label new issues        success  run #35135124005
+Assign bugs to owner         success  run #35135124922
+Node.js CI                   success  run #35188931645
+
+#21 labels: bug, triage
+#21 assignee: Reevan8899
+#21 closed    2026-09-17T06:13:57Z
+#21 reopened  2026-09-17T06:14:46Z
+#21 closed    2026-09-17T06:17:23Z
+Переходы карточки Done -> Todo подтверждены в интерфейсе Projects.
+
+exit code: 0

@@ -1,0 +1,18 @@
+$ node work/audit.mjs milestones
+GitHub REST: milestones
+
+Sprint 1: MVP
+  Deadline: 2026-09-30
+  Closed: 1/10 | Progress: 10% | Capacity: 31 SP
+
+Sprint 2: Аналитика
+  Deadline: 2026-10-14
+  Closed: 0/6 | Progress: 0% | Capacity: 21 SP
+
+Sprint 3: Полировка
+  Deadline: 2026-10-28
+  Closed: 0/4 | Progress: 0% | Capacity: 15 SP
+
+Sprint 1: завершено 5 из 31 SP (16.13%).
+
+exit code: 0

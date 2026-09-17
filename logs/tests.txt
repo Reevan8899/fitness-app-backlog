@@ -1,0 +1,36 @@
+$ node work/audit.mjs tests
+
+> fitness-app-backlog@1.0.0 test
+> node --test --experimental-test-coverage --test-coverage-include=src/*.js --test-coverage-exclude=src/server.js --test-coverage-lines=80 --test-coverage-branches=80 --test-coverage-functions=80
+
+✔ HTTP form, registration, session cookie and duplicate flow (65.4916ms)
+✔ HTTP malformed, null, array and oversized input (10.9956ms)
+✔ HTTP mail failure is service unavailable (28.6605ms)
+✔ unexpected exceptions return generic error without details (4.0808ms)
+✔ registration normalizes email, starts session and sends welcome message (29.829ms)
+✔ duplicate addresses are rejected regardless of case (29.7998ms)
+✔ validation rejects malformed input and permits minimum password length (34.7813ms)
+✔ unknown session is unauthenticated (0.1235ms)
+✔ mail transport failure rolls back user and allows retry (55.2608ms)
+✔ concurrent duplicate registration is rejected (25.112ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 284.7077
+ℹ start of coverage report
+ℹ ----------------------------------------------------------
+ℹ file      | line % | branch % | funcs % | uncovered lines
+ℹ ----------------------------------------------------------
+ℹ src       |        |          |         | 
+ℹ  app.js   | 100.00 |   100.00 |  100.00 | 
+ℹ  auth.js  | 100.00 |   100.00 |  100.00 | 
+ℹ ----------------------------------------------------------
+ℹ all files | 100.00 |   100.00 |  100.00 | 
+ℹ ----------------------------------------------------------
+ℹ end of coverage report
+
+exit code: 0

@@ -1,0 +1,23 @@
+$ node work/audit.mjs pull-request
+GitHub REST: Pull Request #22
+feat(auth): user registration
+https://github.com/Reevan8899/fitness-app-backlog/pull/22
+Merged: true | Merged at: 2026-09-17T06:13:55Z
+Merge commit: 0dbb0f9f3cdc73c620e7b0eb9e008eb7e1f98823
+Closing keyword: Closes #1
+
+Issue #1: closed
+https://github.com/Reevan8899/fitness-app-backlog/issues/1
+Closed at: 2026-09-17T06:13:56Z
+
+Checks:
+  test: success
+
+Git history:
+0dbb0f9 Merge pull request #22 from Reevan8899/feature/user-registration
+ed9a5f6 feat(auth): implement user registration
+9b11c54 ci: add issue templates and automation workflows
+ff86d09 docs: add product vision and definition of done
+ae5d7b5 Initial commit
+
+exit code: 0

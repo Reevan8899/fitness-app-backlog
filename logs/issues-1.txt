@@ -1,0 +1,19 @@
+$ node work/audit.mjs issues-1
+GitHub REST: Reevan8899/fitness-app-backlog
+ #   Issue                                                    Labels                         Sprint  SP
+-----------------------------------------------------------------------------------------------------------------
+#1   [US-01] Регистрация по email                               feature, priority: high        1       5
+#2   [US-02] Вход по email и паролю                             feature, priority: high        1       3
+#3   [US-03] Восстановление пароля                              feature, priority: medium      2       5
+#4   [US-04] Запись новой тренировки                            feature, priority: high        1       5
+#5   [US-05] Просмотр истории тренировок                        feature, priority: high        1       3
+#6   [US-06] Редактирование тренировки                          feature, priority: medium      2       3
+#7   [US-07] Удаление тренировки                                feature, priority: medium      1       2
+#8   [US-08] Добавление фото к тренировке                       feature, priority: low         3       5
+#9   [US-09] Постановка цели по количеству тренировок           feature, priority: high        1       3
+#10  [US-10] Просмотр статистики за месяц                       feature, priority: medium      2       5
+
+20 основных Issues; у всех есть критерии приёмки, DoD, оценка и triage.
+Story Points сверены с таблицей GitHub Projects.
+
+exit code: 0

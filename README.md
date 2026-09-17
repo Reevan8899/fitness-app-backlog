@@ -9,3 +9,17 @@
 - [Milestones](https://github.com/Reevan8899/fitness-app-backlog/milestones)
 
 MIT License.
+
+## Результаты практики
+
+- [Отчёт](PR3_Отчёт_Киреев.md)
+- [Kanban](https://github.com/users/Reevan8899/projects/1/views/1)
+- [Таблица Story Points](https://github.com/users/Reevan8899/projects/1/views/2)
+- [API регистрации](docs/api.md)
+- [PR регистрации](https://github.com/Reevan8899/fitness-app-backlog/pull/22)
+
+## Запуск
+
+Требуется Node.js 22+. Выполните `npm ci`, `npm test`, `npm run smoke`, затем `npm start`. Форма: http://127.0.0.1:3000.
+
+Учебный стенд использует хранилище в памяти и тестовый почтовый outbox.
